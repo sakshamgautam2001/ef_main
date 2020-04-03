@@ -97,6 +97,29 @@
   .contact_items .item {
     margin: 20px;
   }
+  .table-features{
+    display: none;
+    
+  }
+  .table-entry{
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 25px;
+  }
+  .pricing-time{
+    width: 100%;
+  }
+  .pricing-bar{
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .table-entry:hover{
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -141,6 +164,31 @@
     width: 100%;
   }
 
+  .table-button{
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+    height: auto;
+    padding: 0px;
+    background-color: darkslateblue;
+    float: left;
+    margin-bottom: 50px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 20px;
+  }
+  .table-button:hover{
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+    height: auto;
+    padding: 0px;
+    background-color: darkblue;
+    float: left;
+    margin-bottom: 50px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 20px;
+  }
+
 }
 
 @media (max-width: 576px) {
@@ -155,6 +203,9 @@
   .custom_heading-container hr {
     display: none;
   }
+
+
+
 }
 
 @media (max-width: 480px) {

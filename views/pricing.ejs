@@ -1,0 +1,254 @@
+
+
+<script>
+
+    $(document).ready(function(){
+        
+        $('.pricing-table:not(:first)').hide();
+        $('.pricing-time a').click(function(event){
+            event.preventDefault();
+            var content=$(this).attr('href')
+            $(this).parent().addClass('active');
+            $(this).parent().siblings().removeClass('active');
+            $(content).show();
+            $(content).siblings('.pricing-table').hide();
+        });
+    });
+
+</script>
+
+
+
+
+<% layout('shared/layout') -%>
+
+<div class="pricing-topic">
+    <h1>Pricing <span>Plan</span> That <span>Meets</span> Your <span>Business</span> Requirements</h1>
+</div>
+
+<div class="pricing-container">
+    <div class="pricing-bar">
+        <div class="pricing-time">
+            
+            <a href="#price-weekly" ><h3>Weekly</h3></a>
+        </div>
+        <div class="pricing-time">
+            
+            <a href="#price-monthly"><h3>Monthly</h3></a>
+        </div>
+        <div class="pricing-time">
+            
+            <a href="#price-quaterly"><h3>Quaterly</h3></a>
+        </div>
+    </div>
+
+
+
+    
+    <div class="pricing-table" id="price-weekly">
+        <div class="table-features">
+            <div class="entry-price-sample">
+                <h2 style="text-align: center; color: white; font-weight: bolder; margin-top: 20px; margin-bottom: 50px;">Pay per week <br>$59</h2>
+            </div>
+            <div class="table-content"><p>Number of brands</p></div>
+            <div class="table-content-2"><p>Number of brands</p></div>
+            <div class="table-content"><p>Number of brands</p></div>
+            <div class="table-content-2"><p>Number of brands</p></div>
+            <div class="table-content"><p>Number of brands</p></div>
+            <div class="table-content-2"><p>Number of brands</p></div>
+            <div class="table-content"><p>Number of brands</p></div>
+            <div class="table-content-2"><p>Number of brands</p></div>
+            <div class="table-content"><p>Number of brands</p></div>
+            <div style="border-bottom-left-radius:50px ; border-bottom-right-radius:50px ;" class="table-content-2"><p>Number of brands</p></div>
+        </div>
+
+        <div class="table-entry">
+            <div class="entry-price">
+                <h2 style="text-align: center; color: white;font-weight: bolder; margin-top: 20px; margin-bottom: 50px;">Pay per week <br>$29</h2>
+            </div>
+            <div class="table-content"><p>15</p></div>
+            <div class="table-content-2"><p>yes</p></div>
+            <div class="table-content"><p>8</p></div>
+            <div class="table-content-2"><p>yes</p></div>
+            <div class="table-content"><p>no</p></div>
+            <div class="table-content-2"><p>6</p></div>
+            <div class="table-content"><p>5</p></div>
+            <div class="table-content-2"><p>0</p></div>
+            <div class="table-content"><p>1</p></div>
+            <div style="border-bottom-left-radius:50px ; border-bottom-right-radius:50px ;" class="table-content-2"><p>2</p></div>
+        </div>
+        <div class="table-entry">
+            <div class="entry-price">
+                <h2 style="text-align: center; color: white; font-weight: bolder; margin-top: 20px; margin-bottom: 50px;">Pay per week <br>$59</h2>
+            </div>           
+            <div class="table-content"><p>15</p></div>
+            <div class="table-content-2"><p>yes</p></div>
+            <div class="table-content"><p>8</p></div>
+            <div class="table-content-2"><p>yes</p></div>
+            <div class="table-content"><p>no</p></div>
+            <div class="table-content-2"><p>6</p></div>
+            <div class="table-content"><p>5</p></div>
+            <div class="table-content-2"><p>0</p></div>
+            <div class="table-content"><p>1</p></div>
+            <div style="border-bottom-left-radius:50px ; border-bottom-right-radius:50px ;" class="table-content-2"><p>2</p></div>
+        </div>
+        <div class="table-entry">
+            <div class="entry-price">
+                <h2 style="text-align: center; color: white; font-weight: bolder; margin-top: 20px; margin-bottom: 50px;">Pay per week <br>$149</h2>
+            </div>            
+        
+            <div class="table-content"><p>15</p></div>
+            <div class="table-content-2"><p>yes</p></div>
+            <div class="table-content"><p>8</p></div>
+            <div class="table-content-2"><p>yes</p></div>
+            <div class="table-content"><p>no</p></div>
+            <div class="table-content-2"><p>6</p></div>
+            <div class="table-content"><p>5</p></div>
+            <div class="table-content-2"><p>0</p></div>
+            <div class="table-content"><p>1</p></div>
+            <div style="border-bottom-left-radius:50px ; border-bottom-right-radius:50px ;" class="table-content-2"><p>2</p></div>
+        </div>
+
+    </div>
+
+
+    <div class="pricing-table" id="price-monthly">
+        <div class="table-features">
+            <div class="entry-price-sample">
+                <h2 style="text-align: center; color: white; font-weight: bolder; margin-top: 20px; margin-bottom: 50px;">Pay per Month <br>$99</h2>
+            </div>
+            <div class="table-content"><p>Number of brands</p></div>
+            <div class="table-content-2"><p>Number of brands</p></div>
+            <div class="table-content"><p>Number of brands</p></div>
+            <div class="table-content-2"><p>Number of brands</p></div>
+            <div class="table-content"><p>Number of brands</p></div>
+            <div class="table-content-2"><p>Number of brands</p></div>
+            <div class="table-content"><p>Number of brands</p></div>
+            <div class="table-content-2"><p>Number of brands</p></div>
+            <div class="table-content"><p>Number of brands</p></div>
+            <div style="border-bottom-left-radius:50px ; border-bottom-right-radius:50px ;" class="table-content-2"><p>Number of brands</p></div>
+        </div>
+
+        <div class="table-entry">
+            <div class="entry-price">
+                <h2 style="text-align: center; color: white;font-weight: bolder; margin-top: 20px; margin-bottom: 50px;">Pay per Month <br>$229</h2>
+            </div>
+            <div class="table-content"><p>15</p></div>
+            <div class="table-content-2"><p>yes</p></div>
+            <div class="table-content"><p>8</p></div>
+            <div class="table-content-2"><p>yes</p></div>
+            <div class="table-content"><p>no</p></div>
+            <div class="table-content-2"><p>6</p></div>
+            <div class="table-content"><p>5</p></div>
+            <div class="table-content-2"><p>0</p></div>
+            <div class="table-content"><p>1</p></div>
+            <div style="border-bottom-left-radius:50px ; border-bottom-right-radius:50px ;" class="table-content-2"><p>2</p></div>
+        </div>
+        <div class="table-entry">
+            <div class="entry-price">
+                <h2 style="text-align: center; color: white; font-weight: bolder; margin-top: 20px; margin-bottom: 50px;">Pay per Month <br>$259</h2>
+            </div>           
+            <div class="table-content"><p>15</p></div>
+            <div class="table-content-2"><p>yes</p></div>
+            <div class="table-content"><p>8</p></div>
+            <div class="table-content-2"><p>yes</p></div>
+            <div class="table-content"><p>no</p></div>
+            <div class="table-content-2"><p>6</p></div>
+            <div class="table-content"><p>5</p></div>
+            <div class="table-content-2"><p>0</p></div>
+            <div class="table-content"><p>1</p></div>
+            <div style="border-bottom-left-radius:50px ; border-bottom-right-radius:50px ;" class="table-content-2"><p>2</p></div>
+        </div>
+        <div class="table-entry">
+            <div class="entry-price">
+                <h2 style="text-align: center; color: white; font-weight: bolder; margin-top: 20px; margin-bottom: 50px;">Pay per Month <br>$349</h2>
+            </div>            
+        
+            <div class="table-content"><p>15</p></div>
+            <div class="table-content-2"><p>yes</p></div>
+            <div class="table-content"><p>8</p></div>
+            <div class="table-content-2"><p>yes</p></div>
+            <div class="table-content"><p>no</p></div>
+            <div class="table-content-2"><p>6</p></div>
+            <div class="table-content"><p>5</p></div>
+            <div class="table-content-2"><p>0</p></div>
+            <div class="table-content"><p>1</p></div>
+            <div style="border-bottom-left-radius:50px ; border-bottom-right-radius:50px ;" class="table-content-2"><p>2</p></div>
+        </div>
+
+    </div>
+
+
+    <div class="pricing-table" id="price-quaterly">
+        <div class="table-features">
+            <div class="entry-price-sample">
+                <h2 style="text-align: center; color: white; font-weight: bolder; margin-top: 20px; margin-bottom: 50px;">Pay per week <br>$59</h2>
+            </div>
+            <div class="table-content"><p>Number of brands</p></div>
+            <div class="table-content-2"><p>Number of brands</p></div>
+            <div class="table-content"><p>Number of brands</p></div>
+            <div class="table-content-2"><p>Number of brands</p></div>
+            <div class="table-content"><p>Number of brands</p></div>
+            <div class="table-content-2"><p>Number of brands</p></div>
+            <div class="table-content"><p>Number of brands</p></div>
+            <div class="table-content-2"><p>Number of brands</p></div>
+            <div class="table-content"><p>Number of brands</p></div>
+            <div style="border-bottom-left-radius:50px ; border-bottom-right-radius:50px ;" class="table-content-2"><p>Number of brands</p></div>
+        </div>
+
+        <div class="table-entry">
+            <div class="entry-price">
+                <h2 style="text-align: center; color: white;font-weight: bolder; margin-top: 20px; margin-bottom: 50px;">Pay per Quarter <br>$129</h2>
+            </div>
+            <div class="table-content"><p>15</p></div>
+            <div class="table-content-2"><p>yes</p></div>
+            <div class="table-content"><p>8</p></div>
+            <div class="table-content-2"><p>yes</p></div>
+            <div class="table-content"><p>no</p></div>
+            <div class="table-content-2"><p>6</p></div>
+            <div class="table-content"><p>5</p></div>
+            <div class="table-content-2"><p>0</p></div>
+            <div class="table-content"><p>1</p></div>
+            <div style="border-bottom-left-radius:50px ; border-bottom-right-radius:50px ;" class="table-content-2"><p>2</p></div>
+        </div>
+        <div class="table-entry">
+            <div class="entry-price">
+                <h2 style="text-align: center; color: white; font-weight: bolder; margin-top: 20px; margin-bottom: 50px;">Pay per Quarter <br>$259</h2>
+            </div>           
+            <div class="table-content"><p>15</p></div>
+            <div class="table-content-2"><p>yes</p></div>
+            <div class="table-content"><p>8</p></div>
+            <div class="table-content-2"><p>yes</p></div>
+            <div class="table-content"><p>no</p></div>
+            <div class="table-content-2"><p>6</p></div>
+            <div class="table-content"><p>5</p></div>
+            <div class="table-content-2"><p>0</p></div>
+            <div class="table-content"><p>1</p></div>
+            <div style="border-bottom-left-radius:50px ; border-bottom-right-radius:50px ;" class="table-content-2"><p>2</p></div>
+        </div>
+        <div class="table-entry">
+            <div class="entry-price">
+                <h2 style="text-align: center; color: white; font-weight: bolder; margin-top: 20px; margin-bottom: 50px;">Pay per Quarter <br>$549</h2>
+            </div>            
+        
+            <div class="table-content"><p>15</p></div>
+            <div class="table-content-2"><p>yes</p></div>
+            <div class="table-content"><p>8</p></div>
+            <div class="table-content-2"><p>yes</p></div>
+            <div class="table-content"><p>no</p></div>
+            <div class="table-content-2"><p>6</p></div>
+            <div class="table-content"><p>5</p></div>
+            <div class="table-content-2"><p>0</p></div>
+            <div class="table-content"><p>1</p></div>
+            <div style="border-bottom-left-radius:50px ; border-bottom-right-radius:50px ;" class="table-content-2"><p>2</p></div>
+            
+        </div>
+
+    </div>
+
+
+    <div style="width: 100%; height: auto;">
+        <div class="table-button"><a href=""><h5 style="text-align: center; color: white;">Sign up</h5></a></div>
+    </div>
+
+</div>

@@ -998,3 +998,199 @@ a:focus {
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
+
+
+
+.pricing-topic{
+  width: 100%;
+  height: auto;
+  float: left;
+  padding: 7%;
+  background-color: white;
+}
+.pricing-topic h1{
+  /* text-transform: uppercase; */
+  text-align: center;
+  font-weight: bolder;
+  color: #a454fd;
+}
+.pricing-topic span{
+  color: #021056;
+}
+.pricing-container{
+  width: 100%;
+  float: left;
+  height: auto;
+  background-color: white;
+}
+.pricing-bar{
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  height: auto;
+  float: left;
+  background-color: darkblue;
+  border-radius: 25px;
+  margin-bottom: 40px;
+}
+.pricing-time{
+  float: left;
+  width: 33.3333%;
+  height: auto;
+}
+.pricing-time h3{
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.pricing-time:hover{
+  background-color: #1e025b;
+  border-radius: 25px;
+  transition: all 0.4s ease-in-out;
+}
+
+.pricing-table{
+  width: 100%;
+  height: auto;
+  float: left;
+  background: white;
+  padding: 5%;
+}
+.table-features{
+  width: 24%;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  float: left;
+  height: auto;
+  
+}
+.table-entry{
+  width: 24%;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  float: left;
+  height: auto;
+  box-shadow: 0 5px 15px rgba(0.7, 0.7, 0.7, 0.7);
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  
+}
+.table-entry:hover{
+  width: 25%;
+  margin-right: 0;
+  margin-left:0 ;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+}
+.table-content{
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+.table-content-2{
+  width: 100%;
+  height: auto;
+  background-color: lightgray;
+}
+.table-content p{
+  text-align: center;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 50px;
+}
+.table-content-2 p{
+  text-align: center;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 50px;
+}
+.table-entry .entry-price{
+  width: 100%;
+  padding: 20px;
+  height: auto;
+  background-image: url(../images/Bg_Pricing.png) ;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.entry-price-sample{
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  height: auto;
+}
+.active h3{
+  font-weight: bolder;
+  
+  
+}
+.active{
+  font-weight: bolder;
+}
+.table-button{
+  width: 20%;
+  margin-right: 40%;
+  margin-left: 40%;
+  height: auto;
+  padding: 0px;
+  background-color: darkslateblue;
+  float: left;
+  margin-bottom: 50px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 20px;
+}
+.table-button:hover{
+  width: 20%;
+  margin-right: 40%;
+  margin-left: 40%;
+  height: auto;
+  padding: 0px;
+  background-color: darkblue;
+  float: left;
+  margin-bottom: 50px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 20px;
+}
+.table-button h5{
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 20px;
+}
+
+
+/* faq css */
+
+
+
+.accordion-section .panel-default > .panel-heading {
+  border: 0;
+  background: #f4f4f4;
+  padding: 0;
+}
+.accordion-section .panel-default .panel-title a {
+  display: block;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+.accordion-section .panel-default .panel-title a:after {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-size: 3rem;
+  content: "\f106";
+  color: #1f7de2;
+  float: right;
+  margin-top: -12px;
+}
+.accordion-section .panel-default .panel-title a.collapsed:after {
+  content: "\f107";
+}
+.accordion-section .panel-default .panel-body {
+  font-size: 1.2rem;
+}
+
+
+/* faq css end */

@@ -23,6 +23,13 @@ app.get('/',(req,res)=>{
     res.render('home')
 });
 
+app.get('/pricing',(req,res)=>{
+    res.render('pricing')
+});
+app.get('/faq',(req,res)=>{
+    res.render('faq')
+});
+
 server.listen(process.env.PORT || 7500,'0.0.0.0',()=>{
     //console.log(app.get('views'))
     
