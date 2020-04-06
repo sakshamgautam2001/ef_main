@@ -1,5 +1,37 @@
 <% layout('shared/layout') -%>
 
+
+<script>
+  $(document).ready(function(){
+    $('.newsletter-reveal-button').click(function(event){
+      $('.newsletter-container').animate({'left':'0px'},400);
+    });
+    $('.close-button').click(function(){
+      $('.newsletter-container').animate({'left':'-500px'},400);
+      
+    });
+  });
+</script>
+
+<!-- subscribe -->
+<div class="newsletter-reveal-button">
+  <h4 class="vertical-text">Subscribe</h4>
+</div>
+
+<div class="newsletter-container">
+  <img class="close-button" src="/assets/images/ic_close_white_24px.svg" width="32" />
+  <div class="newsletter-popup">
+    <h3 style="color: white;">Subscribe to our Newsletter!</h3>
+    <input class="user-email" type="email" />
+    <br />
+    <button class="subscribe">Subscribe</button>
+  </div>
+</div>
+<!-- subscribe end -->
+
+
+
+
 <!-- banner -->
 
 <div class=" slider_section position-relative" >

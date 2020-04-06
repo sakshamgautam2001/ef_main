@@ -29,6 +29,51 @@ body {
 }
 
 
+.newsletter-reveal-button {
+  position: fixed;
+  left: 0;
+  top: calc(50% - 56px);
+  padding: 16px 8px 16px 9px;
+  background-color: darkslateblue;
+  color: #ffffff;
+  border-radius: 0px 16px 16px 0px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.newsletter-reveal-button h4 {
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.newsletter-container {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -500px;
+  text-align: center;
+  padding: 40px;
+  background-color: darkslateblue;
+  z-index: 1000;
+}
+
+.newsletter-container .close-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  margin: 5px;
+}
+.newsletter-popup input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.vertical-text {
+  writing-mode: vertical-lr;
+}
+
+
 
 .custom_heading-container {
   display: -webkit-box;
