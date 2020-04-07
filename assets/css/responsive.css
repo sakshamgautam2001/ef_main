@@ -154,9 +154,12 @@
   .service-content-sp h1{
     padding-left: 0px;
     padding-top: 50px;
+    text-align: center;
   }
   .service-content-sp p{
-    padding-left: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
   }
   
 }
