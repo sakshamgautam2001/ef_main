@@ -29,6 +29,12 @@ app.get('/pricing',(req,res)=>{
 app.get('/faq',(req,res)=>{
     res.render('faq')
 });
+app.get('/services',(req,res)=>{
+    res.render('services')
+});
+app.get('/service',(req,res)=>{
+    res.render('service')
+});
 
 server.listen(process.env.PORT || 7500,'0.0.0.0',()=>{
     //console.log(app.get('views'))

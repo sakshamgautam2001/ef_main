@@ -133,6 +133,24 @@
     float: left;
   
   } */
+  .services-card{
+    margin: 1.25%;
+    width: 47.5%;
+    height: auto;
+    float: left;
+    margin-top: 50px;
+  }
+
+  .service-side-list{
+    height: auto;
+    float: left;
+    width: 96%;
+    margin: 2%;
+  }
+  .service-content-sp{
+    width: 98%;
+    margin: 1%;
+  }
   
 }
 
@@ -204,6 +222,12 @@
   }
   .footer-division{
     width: 100%;
+  }
+  .services-card{
+    margin: 1.5%;
+    width: 96%;
+    height: auto;
+    float: left;
   }
 
 }

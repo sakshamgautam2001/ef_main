@@ -1,0 +1,105 @@
+<% layout('shared/layout') -%>
+
+
+<script>
+    $(document).ready(function(){
+        $('.service-side-list a').click(function(event){
+            event.preventDefault();
+            var content=$(this).attr('href');
+            // $(this).parent().addClass('active');
+            // $(this).parent().siblings().removeClass('active');
+            $(content).show();
+            $(content).siblings('.service-content-sp').hide();
+        });
+        var option='color-correction';
+        var url=window.location.href;
+        var option=url.split('#')[1];
+        
+        showDiv(option);
+
+    });
+
+    function showDiv(option){
+        $('.service-content-sp').hide();
+        $('#'+option).show()
+        $('#'+option).siblings('.service-content-sp').hide()
+    };
+</script>
+
+
+
+<div class="services-banner">
+    <h1 style="text-align: center; color: white; font-weight: bolder; margin-top: 50px; font-size: 70px; margin-top: 100px;">SERVICES</h1>
+    <h4 style="text-align: center; color: white; margin-bottom: 150px;">HOME / SERVICES / SERVICES ALL</h4>
+</div>
+
+<div class="service-side-list">
+    <h1 style="color: darkslateblue; padding: 10px; text-align: center; font-weight: bold;">Features</h1>
+    <a href="#color-correction"><div class="service-side-sp">
+        <h5>Color Correction</h5>
+    </div></a>
+    <a href="#masking"><div class="service-side-sp">
+        <h5>Masking</h5>
+    </div></a>
+    <a href="#retouching"><div class="service-side-sp">
+        <h5>Retouching</h5>
+    </div></a>
+    <a href="#clipping-path"><div class="service-side-sp">
+        <h5>Clipping Path</h5>
+    </div></a>
+    <a href="#manipulation"><div class="service-side-sp">
+        <h5>Manipulation</h5>
+    </div></a>
+    <a href="#misc"><div class="service-side-sp">
+        <h5>Miscellaneous</h5>
+    </div></a>
+</div>
+
+<div class="service-content-sp" id="color-correction">
+    <h1 style="font-size: 40px; margin-bottom: 35px; padding-top: 50px; padding-left: 50px;">Color Correction</h1>
+    <p style="padding-left: 50px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat. Maecenas nibh dolor, malesuada et bibendum a, sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien.
+
+Nam scelerisque tristique dolor vitae tincidunt. Aenean quis massa uada mi elementum elementum. , nec tincidunt nunc posuere ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo iaculis ligula, ac dapibus quam ornare ut. Praesent ac hendrerit sem, et tempus sem
+    </p>
+</div>
+<div class="service-content-sp" id="masking">
+    <h1 style="font-size: 40px; margin-bottom: 35px; padding-top: 50px; padding-left: 50px;">Masking</h1>
+    <p style="padding-left: 50px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat. Maecenas nibh dolor, malesuada et bibendum a, sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien.
+
+Nam scelerisque tristique dolor vitae tincidunt. Aenean quis massa uada mi elementum elementum. , nec tincidunt nunc posuere ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo iaculis ligula, ac dapibus quam ornare ut. Praesent ac hendrerit sem, et tempus sem
+    </p>
+</div>
+<div class="service-content-sp" id="retouching">
+    <h1 style="font-size: 40px; margin-bottom: 35px; padding-top: 50px; padding-left: 50px;">Retouching</h1>
+    <p style="padding-left: 50px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat. Maecenas nibh dolor, malesuada et bibendum a, sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien.
+
+Nam scelerisque tristique dolor vitae tincidunt. Aenean quis massa uada mi elementum elementum. , nec tincidunt nunc posuere ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo iaculis ligula, ac dapibus quam ornare ut. Praesent ac hendrerit sem, et tempus sem
+    </p>
+</div>
+<div class="service-content-sp" id="clipping-path">
+    <h1 style="font-size: 40px; margin-bottom: 35px; padding-top: 50px; padding-left: 50px;">Clipping Path</h1>
+    <p style="padding-left: 50px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat. Maecenas nibh dolor, malesuada et bibendum a, sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien.
+
+Nam scelerisque tristique dolor vitae tincidunt. Aenean quis massa uada mi elementum elementum. , nec tincidunt nunc posuere ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo iaculis ligula, ac dapibus quam ornare ut. Praesent ac hendrerit sem, et tempus sem
+    </p>
+</div>
+<div class="service-content-sp" id="manipulation">
+    <h1 style="font-size: 40px; margin-bottom: 35px; padding-top: 50px; padding-left: 50px;">Manipulation</h1>
+    <p style="padding-left: 50px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat. Maecenas nibh dolor, malesuada et bibendum a, sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien.
+
+Nam scelerisque tristique dolor vitae tincidunt. Aenean quis massa uada mi elementum elementum. , nec tincidunt nunc posuere ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo iaculis ligula, ac dapibus quam ornare ut. Praesent ac hendrerit sem, et tempus sem
+    </p>
+</div>
+<div class="service-content-sp" id="misc">
+    <h1 style="font-size: 40px; margin-bottom: 35px; padding-top: 50px; padding-left: 50px;">Miscellaneous</h1>
+    <p style="padding-left: 50px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat. Maecenas nibh dolor, malesuada et bibendum a, sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien.
+
+Nam scelerisque tristique dolor vitae tincidunt. Aenean quis massa uada mi elementum elementum. , nec tincidunt nunc posuere ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo iaculis ligula, ac dapibus quam ornare ut. Praesent ac hendrerit sem, et tempus sem
+    </p>
+</div>
