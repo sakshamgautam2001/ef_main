@@ -151,6 +151,13 @@
     width: 98%;
     margin: 1%;
   }
+  .service-content-sp h1{
+    padding-left: 0px;
+    padding-top: 50px;
+  }
+  .service-content-sp p{
+    padding-left: 0px;
+  }
   
 }
 

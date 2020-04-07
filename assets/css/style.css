@@ -1392,3 +1392,10 @@ a:focus {
   border-radius: 40px;
   box-shadow: 0 5px 15px rgba(0.1, 0.3, 0.1, 0.3);
 }
+.service-content-sp h1{
+  padding-left: 50px;
+  padding-top: 50px;
+}
+.service-content-sp p{
+  padding-left: 50px;
+}
