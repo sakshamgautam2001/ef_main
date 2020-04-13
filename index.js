@@ -9,12 +9,18 @@ const app=express() ;
 const http=require('http');
 const server=http.Server(app);
 
+const bodyParser=require('body-parser');
+const jsonParser = bodyParser.json();
+const urlencodedParser = bodyParser.urlencoded({ extended: false })
+
 
 app.engine('ejs',engine) ;
 app.set('view engine','ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.use('/assets',express.static('assets'));
+
+const dataq=require('./queries')
 
 
 
@@ -35,6 +41,12 @@ app.get('/services',(req,res)=>{
 app.get('/service',(req,res)=>{
     res.render('service')
 });
+app.get('/register',(req,res)=>{
+    res.render('register')
+});
+app.post('/register',urlencodedParser,dataq.userRegister);
+app.get('/show',urlencodedParser,dataq.getUsers);
+
 
 server.listen(process.env.PORT || 7500,'0.0.0.0',()=>{
     //console.log(app.get('views'))
