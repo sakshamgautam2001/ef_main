@@ -34,8 +34,12 @@ const login=(req,res)=>{
         if(err) {
             throw err;
         }
-        res.send('Welcome to dashboard');
-        console.log(result.rows);
+        if(result.rowCount==1){
+            res.send('welcome to dashboard')
+        }
+        else{
+            res.send('incorrect email or password')
+        }
     });
     
 }
