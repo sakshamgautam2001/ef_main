@@ -44,8 +44,12 @@ app.get('/service',(req,res)=>{
 app.get('/register',(req,res)=>{
     res.render('register')
 });
+app.get('/login',(req,res)=>{
+    res.render('login')
+});
 app.post('/register',urlencodedParser,dataq.userRegister);
 app.get('/show',urlencodedParser,dataq.getUsers);
+app.post('/login',urlencodedParser,dataq.login);
 
 
 server.listen(process.env.PORT || 7500,'0.0.0.0',()=>{
