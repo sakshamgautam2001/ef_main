@@ -794,8 +794,10 @@ input.checkbox:checked:after {
   function onSignIn(googleUser){
     var profile=googleUser.getBasicProfile();
     $('.g-signin2').css("display","none");
-    $('#g1').attr("value",profile.getName(),);
-    $('#g2').attr("value",profile.getEmail(),"readonly");   
+    $('#g1').attr("value",profile.getName());
+    $('#g1').attr("readonly",true);
+    $('#g2').attr("value",profile.getEmail());   
+    $('#g2').attr("readonly",true);
   }
 
 
@@ -817,7 +819,7 @@ input.checkbox:checked:after {
             <form action="/register" method="post" onsubmit="return checkPassword(this)">
                 <input class="text" type="text" name="name" placeholder="Name" required="" id="g1">
                 <input class="text email" type="email" name="email" placeholder="Email" required="" id="g2">
-                <input class="text email" type="text" name="phone" placeholder="Phone number" required="" id="g3">
+                <input class="text email" type="text" name="phone" placeholder="Phone number" required="" >
                 <input class="text" type="text" name="username" placeholder="Username" required="">
                 <input class="text email" type="password" name="password" placeholder="Password" required="">
                 <input class="text w3lpass" type="password" name="password2" placeholder="Confirm Password" required="">
