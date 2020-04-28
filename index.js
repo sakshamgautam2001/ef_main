@@ -1,13 +1,17 @@
 const express=require("express");
 const engine=require('ejs-locals') ;
 const path=require('path') ;
-
+const passport = require('passport');
 
 // const Request=require('request');
 
 const app=express() ;
 const http=require('http');
 const server=http.Server(app);
+
+app.use(require('express-session')({ secret: "hello", resave: true, saveUninitialized: true }));
+app.use(passport.initialize());
+app.use(passport.session());
 
 const bodyParser=require('body-parser');
 const jsonParser = bodyParser.json();
@@ -26,7 +30,7 @@ const dataq=require('./queries')
 
 
 app.get('/',(req,res)=>{
-    res.render('home')
+    res.render('home');
 });
 
 app.get('/pricing',(req,res)=>{
@@ -50,6 +54,16 @@ app.get('/login',(req,res)=>{
 app.post('/register',urlencodedParser,dataq.userRegister);
 app.get('/show',urlencodedParser,dataq.getUsers);
 app.post('/login',urlencodedParser,dataq.login);
+
+app.get('/sign/google',dataq.googleSign);
+app.get('/log/google',dataq.googleLogin);
+app.get('/returnplatform',dataq.returnPlatform,dataq.returnPlatform2);
+app.get('/returnplatformlogin',dataq.returnPlatform,dataq.returnPlatform3)
+app.get('/return-account',dataq.returnAccount);
+app.get('/return-account-login',dataq.returnAccountLogin);
+
+
+
 
 
 server.listen(process.env.PORT || 7500,'0.0.0.0',()=>{

@@ -790,26 +790,7 @@ input.checkbox:checked:after {
     }
   }
 
-
-  function onSignIn(googleUser){
-    var profile=googleUser.getBasicProfile();
-    $('.g-signin2').css("display","none");
-    $('#g1').attr("value",profile.getName());
-    $('#g1').attr("readonly",true);
-    $('#g2').attr("value",profile.getEmail());   
-    $('#g2').attr("readonly",true);
-  }
-
-
-
-
-
 </script>
-
-<script type="text/javascript" src="/assets/js/jquery-3.4.1.min.js"></script>
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-<meta name="google-signin-client_id" content="293743718281-5296afkh4lsilt2upb9a4ib2pqb2bj7f.apps.googleusercontent.com">
-
 
 
 <div class="main-w3layouts wrapper">
@@ -820,7 +801,7 @@ input.checkbox:checked:after {
                 <input class="text" type="text" name="name" placeholder="Name" required="" id="g1">
                 <input class="text email" type="email" name="email" placeholder="Email" required="" id="g2">
                 <input class="text email" type="text" name="phone" placeholder="Phone number" required="" >
-                <input class="text" type="text" name="username" placeholder="Username" required="">
+                
                 <input class="text email" type="password" name="password" placeholder="Password" required="">
                 <input class="text w3lpass" type="password" name="password2" placeholder="Confirm Password" required="">
                 <div class="wthree-text">
@@ -831,7 +812,7 @@ input.checkbox:checked:after {
                     <div class="clear"> </div>
                 </div>
                 <input type="submit" value="SIGNUP">
-                <div class="g-signin2"  data-onsuccess="onSignIn"></div>
+                <p class="mt-5"><a href="/sign/google" >Sign Up with Google</a></p>
             </form>
             
         </div>
