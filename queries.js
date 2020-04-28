@@ -56,23 +56,14 @@ options={
         callbackURL:'/returnplatform'
         };
 
-options2={
-        clientID:'293743718281-5296afkh4lsilt2upb9a4ib2pqb2bj7f.apps.googleusercontent.com',
-        clientSecret:'eTI3X-VmMvRxHnMZkQErrUtP',
-        callbackURL:'/returnplatformlogin'
-        };
-
 
 passport.use(new StrategyGoogle(options,(accessToken,refreshToken,profile,cb)=>{
-        console.log(profile)
+        // console.log(profile)
         return cb(null,profile);
     }
 ));
-passport.use(new StrategyGoogle(options2,(accessToken,refreshToken,profile,cb)=>{
-    console.log(profile)
-    return cb(null,profile);
-}
-));
+
+
 passport.serializeUser((user,cb)=>{
     cb(null,user);
 });
@@ -84,40 +75,39 @@ const googleSign=passport.authenticate('google',{scope:['profile','email']});
 const googleLogin=passport.authenticate('google',{scope:['email']});
 const returnPlatform=passport.authenticate('google',{failureRedirect:'/register'});
 const returnPlatform2=(req,res,next)=>{
-    console.log('done')
+    // console.log('done')
     res.redirect('/return-account');
 };
-const returnPlatform3=(req,res,next)=>{
-    console.log('done')
-    res.redirect('/return-account-login');
-};
+
 
 const returnAccount=(req,res)=>{
     const data=req.user
     var name=data.displayName
     var userid=data.emails[0].value
-    Query="insert into users(name,userid,platform) values('"+name+"','"+userid+"','gmail')"
-    pool.query(Query,(err,result)=>{
-    if(err) throw err;
-    res.send('registered');
-});
+
+    if(name){
+        Query="insert into users(name,userid,platform) values('"+name+"','"+userid+"','gmail')"
+        pool.query(Query,(err,result)=>{
+            if(err) throw err;
+            res.send('registered');
+        });
+    }
+    else{
+        Query="select * from users where userid='"+userid+"'";
+        pool.query(Query,(err,result)=>{
+            if(err) throw err;
+            if(result.rowCount==1){
+                res.send('welcome to dashboard')
+            }
+            else{
+                res.send('this email is not registered')
+            }
+        });
+    }
 }
 
 
-const returnAccountLogin=(req,res)=>{
-    const data=req.user
-    var userid=data.emails[0].value
-    Query="select * from users where userid='"+userid+"'";
-    pool.query(Query,(err,result)=>{
-        if(err) throw err;
-        if(result.rowCount==1){
-        res.send('welcome to dashboard')
-        }
-        else{
-            res.send('this email is not registered')
-        }
-    });
-}
+
 
 
 
@@ -133,6 +123,4 @@ module.exports={
     returnPlatform,
     returnPlatform2,
     returnAccount,
-    returnAccountLogin,
-    returnPlatform3,
 }

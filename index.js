@@ -58,9 +58,8 @@ app.post('/login',urlencodedParser,dataq.login);
 app.get('/sign/google',dataq.googleSign);
 app.get('/log/google',dataq.googleLogin);
 app.get('/returnplatform',dataq.returnPlatform,dataq.returnPlatform2);
-app.get('/returnplatformlogin',dataq.returnPlatform,dataq.returnPlatform3)
 app.get('/return-account',dataq.returnAccount);
-app.get('/return-account-login',dataq.returnAccountLogin);
+
 
 
 
